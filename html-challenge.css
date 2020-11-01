@@ -1,0 +1,443 @@
+@import url(//db.onlinewebfonts.com/c/2d1bee03fe9c268c2b3d3724ca6ad761?family=FF + Schulbuch);
+
+@font-face {
+  font-family: "FF Schulbuch";
+  src: url("//db.onlinewebfonts.com/t/2d1bee03fe9c268c2b3d3724ca6ad761.eot");
+  src: url("//db.onlinewebfonts.com/t/2d1bee03fe9c268c2b3d3724ca6ad761.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/2d1bee03fe9c268c2b3d3724ca6ad761.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/2d1bee03fe9c268c2b3d3724ca6ad761.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/2d1bee03fe9c268c2b3d3724ca6ad761.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/2d1bee03fe9c268c2b3d3724ca6ad761.svg#FF Schulbuch")
+      format("svg");
+}
+
+body {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: rgb(29, 31, 41);
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  bottom: 60%;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 25px 25px;
+  /* z-index: 0; */
+  background-color: rgb(32, 34, 47);
+}
+
+.container {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.relative {
+  position: relative;
+}
+
+.body_light_theme {
+  background-image: linear-gradient(
+    180deg,
+    rgb(247, 249, 255) 35%,
+    white 35%
+  ) !important;
+}
+
+.heading {
+  font-family: Helvetica;
+}
+
+.social_following_block {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.following {
+  font-size: 54px;
+  color: white;
+  font-family: "FF Schulbuch";
+}
+
+.subtext {
+  letter-spacing: 6px;
+  font-size: 12px;
+  position: absolute;
+  top: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.darkmode_button_div {
+  position: relative;
+}
+
+.darkmode_button_label {
+  position: absolute;
+  left: -90px;
+}
+
+@keyframes slideInFromAbove {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+.card {
+  /* animation: 1s ease-out 0s 1 slideInFromAbove; */
+  border-radius: 6px;
+  background: rgb(37, 43, 67);
+  cursor: pointer;
+}
+
+.card:hover {
+  z-index: 999;
+  transform: scale(1.2);
+  transition: transform 0.2s ease-in;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+  box-shadow: 0px 0px 20px black;
+  animation: mymove 0.4s;
+}
+
+@keyframes mymove {
+  0% {
+    transform: rotateY(0);
+  }
+  25% {
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  75% {
+    transform: rotateY(260deg);
+  }
+  100% {
+    transform: rotateY(320deg);
+  }
+}
+
+.card.light_theme_hover:hover {
+  background-color: rgb(225, 228, 240) !important;
+}
+
+.card-body {
+  position: relative;
+}
+
+.card_firstRow .card-body {
+  height: max-content;
+  padding-bottom: 5px !important;
+}
+
+.card_firstRow > .card {
+  min-width: 260px;
+  width: 200px !important;
+  height: max-content;
+  padding-bottom: 25px;
+}
+
+.card_secondRow .card-body,
+.card_thirdRow .card-body {
+  padding: 15px 10px !important;
+  height: 115px;
+}
+
+.card_thirdRow {
+  padding-top: 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card_firstRow {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.card_firstRow > .card:nth-child(1),
+.card_firstRow > .card:nth-child(2) {
+  border-top: 6px solid rgb(0, 140, 248);
+}
+
+.card_firstRow > .card:nth-child(3)::before {
+  background-image: linear-gradient(rgb(254, 195, 95), rgb(225, 69, 149));
+}
+
+.card_firstRow > .card:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(to right, rgb(254, 195, 95), rgb(225, 69, 149));
+  top: -1px;
+  left: 0;
+  right: 0;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.card_firstRow > .card:nth-child(4) {
+  border-top: 6px solid rgb(172, 2, 43) !important;
+}
+
+.section-2 {
+  margin-bottom: 20px;
+}
+
+.card_secondRow > .card,
+.card_thirdRow > .card {
+  min-width: 260px;
+  width: 200px !important;
+}
+
+.card_secondRow .card .card-body div,
+.card_thirdRow .card .card-body div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Copied From Ww3 school for the Toggle Button */
+/* ------------------- Toggle Button CSS Start ------------------- */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 67px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(34px);
+  -ms-transform: translateX(34px);
+  transform: translateX(34px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+  background: linear-gradient(to right, rgb(50, 150, 224), rgb(48, 168, 116));
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  background-color: rgb(37, 43, 67);
+}
+
+.slider.round.light_theme:before {
+  background-color: white;
+}
+
+/* ------------------- Toggle Button CSS end ------------------- */
+
+.font_green {
+  color: rgb(6, 182, 136);
+  font-weight: bold;
+}
+
+.mgt-25 {
+  margin-top: 25px;
+}
+
+.card_secondRow .font_green,
+.card_secondRow .font_red,
+.card_thirdRow .font_green,
+.card_thirdRow .font_red {
+  margin-top: 14px;
+}
+
+.font-11 {
+  font-size: 11px;
+}
+
+.font_red {
+  color: rgb(222, 63, 72);
+  font-weight: bold;
+}
+
+.font_grey {
+  color: rgb(119, 129, 174);
+}
+
+i.fa {
+  font-size: 25px;
+}
+
+.fa.fa-facebook-square,
+.fa.fa-twitter {
+  color: rgb(0, 140, 248);
+}
+
+.square {
+  width: 19px;
+  height: 19px;
+  background: linear-gradient(45deg, rgb(252, 183, 101), rgb(228, 82, 145));
+  border-radius: 5px;
+}
+
+.fa.fa-circle {
+  color: rgb(198, 0, 37);
+}
+
+.pdt-15 {
+  padding-top: 15px;
+}
+
+i.fa.fa-sort-down,
+i.fa.fa-sort-up {
+  font-size: 12px !important;
+}
+
+.fa.fa-sort-up,
+.fa.fa-sort-down {
+  position: absolute;
+}
+
+.card_firstRow i.fa.fa-facebook-square,
+.card_firstRow i.fa.fa.fa-twitter,
+.card_firstRow i.fa.fa.fa-circle {
+  position: absolute;
+  top: 1px;
+  left: -20px;
+}
+
+.card_firstRow .square {
+  position: absolute;
+  top: 5px;
+  left: -20px;
+}
+
+.mobile {
+  display: none;
+}
+
+/* CSS for mobile */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #background {
+    bottom: 65%;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .section-1,
+  .section-2 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  hr {
+    border-color: rgb(119, 129, 174);
+  }
+
+  .desktop {
+    display: none;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .card_firstRow > .card,
+  .card_secondRow > .card,
+  .card_thirdRow > .card {
+    min-width: 85%;
+  }
+
+  .darkmode_button_label {
+    position: absolute;
+    left: 0px;
+  }
+
+  .darkmode_button_div {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .card_thirdRow {
+    padding-top: 0px;
+  }
+
+  .card_firstRow i.fa.fa-facebook-square,
+  .card_firstRow i.fa.fa.fa-twitter,
+  .card_firstRow i.fa.fa.fa-circle {
+    left: -25px;
+  }
+
+  .card_firstRow .square {
+    left: -20px;
+  }
+  .slider.round.light_theme {
+    background: rgb(174, 179, 203);
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 786px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-device-height: 640px) {
+  #background {
+    bottom: 55%;
+  }
+}

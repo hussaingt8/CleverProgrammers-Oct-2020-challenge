@@ -1,0 +1,317 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fonts -->
+    <link
+      href="//db.onlinewebfonts.com/c/2d1bee03fe9c268c2b3d3724ca6ad761?family=FF+Schulbuch"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="./html-challenge.css" />
+    <title>Social Media Dashboard</title>
+  </head>
+
+  <body class="body_dark_theme">
+    <div id="background">
+      <div class="container">
+        <div class="section-1 desktop">
+          <div class="heading">
+            <h4 class="text-white" style="font-size: 28px; margin-left: 15px">
+              Social Media Dashboard
+            </h4>
+            <div class="darkmode_button_div">
+              <span class="font_grey darkmode_button_label">Dark Mode</span>
+              <span>
+                <label class="switch font_grey">
+                  <input type="checkbox" onchange="switchTheme(this);" />
+                  <span class="slider round darkmode_button_slider"></span>
+                </label>
+              </span>
+            </div>
+          </div>
+          <div style="color: rgb(139, 151, 200)">Total Followers: 23,004</div>
+        </div>
+
+        <div class="section-1 mobile">
+          <div class="heading">
+            <h4 class="text-white" style="font-size: 28px">
+              Social Media Dashboard
+            </h4>
+          </div>
+          <div style="color: rgb(139, 151, 200)">Total Followers: 23,004</div>
+          <hr />
+          <div class="darkmode_button_div">
+            <span class="font_grey darkmode_button_label">Dark Mode</span>
+            <span>
+              <label class="switch font_grey">
+                <input type="checkbox" onchange="switchTheme(this);" />
+                <span class="slider round darkmode_button_slider"></span>
+              </label>
+            </span>
+          </div>
+        </div>
+
+        <div class="row card_firstRow">
+          <div
+            class="col-xs-12 col-sm-5 col-m-5 col-lg-2 card"
+            onmouseover="changeColorOnHover(this)"
+          >
+            <div class="card-body">
+              <span class="font_grey relative">
+                <i class="fa fa-facebook-square"></i>&nbsp; @nathanf
+              </span>
+              <p class="font_grey social_following_block">
+                <span class="following">1987</span><br />
+                <span class="subtext">FOLLOWERS</span>
+              </p>
+              <span class="font_green font-11 relative">
+                <i class="fa fa-sort-up" style="top: 7px; right: 53px"></i> 12
+                Today
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="col-xs-12 col-sm-5 col-m-5 col-lg-2 card"
+            onmouseover="changeColorOnHover(this)"
+          >
+            <div class="card-body">
+              <span class="font_grey relative">
+                <i class="fa fa-twitter"></i>&nbsp; @nathanf
+              </span>
+              <p class="font_grey social_following_block">
+                <span class="following">1044</span><br />
+                <span class="subtext">FOLLOWERS</span>
+              </p>
+              <span class="font_green font-11 relative">
+                <i class="fa fa-sort-up" style="top: 7px; right: 53px"></i> 99
+                Today
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="col-xs-12 col-sm-5 col-m-5 col-lg-2 card"
+            onmouseover="changeColorOnHover(this)"
+          >
+            <div class="card-body" style="margin-top: 5px">
+              <span class="font_grey relative">
+                <span class="square"></span>&nbsp;@realnathanf
+              </span>
+              <p class="font_grey social_following_block">
+                <span class="following">11k</span><br />
+                <span class="subtext">FOLLOWERS</span>
+              </p>
+              <span class="font_green font-11 relative">
+                <i class="fa fa-sort-up" style="top: 7px; right: 65px"></i> 1099
+                Today
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="col-xs-12 col-sm-5 col-m-5 col-lg-2 card"
+            onmouseover="changeColorOnHover(this)"
+          >
+            <div class="card-body">
+              <span class="font_grey relative">
+                <i class="fa fa-circle"></i> &nbsp;Nathan F.
+              </span>
+              <p class="font_grey social_following_block">
+                <span class="following">8239</span><br />
+                <span class="subtext">SUBSCRIBERS</span>
+              </p>
+              <span class="font_red font-11 relative">
+                <i class="fa fa-sort-down" style="top: 4px; right: 53px"></i> 12
+                Today
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-2">
+          <div class="heading">
+            <h4 class="text-white" id="overview_heading">
+              Overview &#8209; Today
+            </h4>
+          </div>
+        </div>
+
+        <div class="row card_secondRow">
+          <div
+            class="col-xs-12 col-sm-5 col-m-5 col-lg-2 card"
+            onmouseover="changeColorOnHover(this)"
+          >
+            <div class="card-body">
+              <div>
+                <span class="font_grey">Page Views</span>
+                <span class="relative">
+                  <i class="fa fa-facebook-square"></i>
+                </span>
+              </div>
+              <div class="pdt-15">
+                <span><h3 class="text-white">87</h3></span>
+                <span class="font_green font-11 relative">
+                  <i class="fa fa-sort-up" style="top: 7px; right: 21px"></i> 3%
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-xs-12 col-sm-5 col-m-5 col-lg-2 card"
+            onmouseover="changeColorOnHover(this)"
+          >
+            <div class="card-body">
+              <div>
+                <span class="font_grey">Likes</span>
+                <span class="relative">
+                  <i class="fa fa-facebook-square"></i>
+                </span>
+              </div>
+              <div class="pdt-15">
+                <span><h3 class="text-white">52</h3></span>
+                <span class="font_red font-11 relative">
+                  <i class="fa fa-sort-down" style="top: 4px; right: 21px"></i>
+                  2%
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-xs-12 col-sm-5 col-m-5 col-lg-2 card"
+            onmouseover="changeColorOnHover(this)"
+          >
+            <div class="card-body">
+              <div>
+                <span class="font_grey">Likes</span>
+                <span class="square"></span>
+              </div>
+              <div class="pdt-15">
+                <span><h3 class="text-white">5462</h3></span>
+                <span class="font_green font-11 relative">
+                  <i class="fa fa-sort-up" style="top: 7px; right: 40px"></i>
+                  2257%
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-xs-12 col-sm-5 col-m-5 col-lg-2 card"
+            onmouseover="changeColorOnHover(this)"
+          >
+            <div class="card-body">
+              <div>
+                <span class="font_grey">Profile Views</span>
+                <span class="square"></span>
+              </div>
+              <div class="pdt-15">
+                <span><h3 class="text-white">52k</h3></span>
+                <span class="font_green font-11 relative">
+                  <i class="fa fa-sort-up" style="top: 7px; right: 40px"></i>
+                  1375%
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row card_thirdRow">
+          <div
+            class="col-xs-12 col-sm-5 col-m-5 col-lg-2 card"
+            onmouseover="changeColorOnHover(this)"
+          >
+            <div class="card-body">
+              <div>
+                <span class="font_grey relative">Retweets</span>
+                <i class="fa fa-twitter"></i>
+              </div>
+              <div class="pdt-15">
+                <span><h3 class="text-white">117</h3></span>
+                <span class="font_green font-11 relative">
+                  <i class="fa fa-sort-up" style="top: 7px; right: 35px"></i>
+                  303%
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-xs-12 col-sm-5 col-m-5 col-lg-2 card"
+            onmouseover="changeColorOnHover(this)"
+          >
+            <div class="card-body">
+              <div>
+                <span class="font_grey relative">Likes</span>
+                <i class="fa fa-twitter"></i>
+              </div>
+              <div class="pdt-15">
+                <span><h3 class="text-white">507</h3></span>
+                <span class="font_green font-11 relative">
+                  <i class="fa fa-sort-up" style="top: 7px; right: 35px"></i>
+                  555%
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-xs-12 col-sm-5 col-m-5 col-lg-2 card"
+            onmouseover="changeColorOnHover(this)"
+          >
+            <div class="card-body">
+              <div>
+                <span class="font_grey relative">Likes</span>
+                <span><i class="fa fa-circle"></i></span>
+              </div>
+              <div class="pdt-15">
+                <span><h3 class="text-white">107</h3></span>
+                <span class="font_red font-11 relative">
+                  <i class="fa fa-sort-down" style="top: 4px; right: 27px"></i>
+                  19%
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-xs-12 col-sm-5 col-m-5 col-lg-2 card"
+            onmouseover="changeColorOnHover(this)"
+          >
+            <div class="card-body">
+              <div>
+                <span class="font_grey">Total Views</span>
+                <span class="relative"><i class="fa fa-circle"></i></span>
+              </div>
+              <div class="pdt-15">
+                <span><h3 class="text-white">1407</h3></span>
+                <span class="font_red font-11 relative">
+                  <i class="fa fa-sort-down" style="top: 4px; right: 27px"></i>
+                  12%
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="html-challenge.js"></script>
+  </body>
+</html>
